@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>복 있는 사람 : 로그인</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+<div class="whole">
+    <div id="subject">
+        <h1 class="subject"><a href="responsive_main.html"><img src="icon/homeicon_width.png" alt="logo" width="200px"></a>
+        </h1>
+        <p>
+            오직 하나님 말씀에 사로잡혀 밤낮 성경말씀 곱씹는 그대!
+            <br>에덴에 다시 심긴 나무,
+            <br>달마다 신선한 과실 맺고 잎사귀 하나 지는 일 없이,
+            <br>늘 꽃 만발한 나무라네.
+            <br>시편 1:2-3, 메시지
+        </p>
+    </div>
+
+    <form name="member_form">
+        <fieldset id="join">
+            <legend class="skip">회원가입</legend>
+            <div id="form_join">
+                <h2>로그인</h2>
+                <label for="id">
+                    <input type="text" name="id" id="id" placeholder="아이디" class="login_input">
+                </label>
+<!--                <input type="button" value="중복확인" class="btn">-->
+                <br>
+                <label for="pwd">
+                    <input type="password" maxlength="20" name="password" id="pwd" placeholder="비밀번호" class="login_input">
+                </label>
+<!--                <input type="button" value="중복확인" class="btn"><br>-->
+                <br>
+                <label for="rememberId">
+                    <input type="checkbox" id="rememberId">   아이디 기억하기
+                </label>
+            </div>
+
+            <div id="button">
+                <input type="submit" value="  로그인  " class="btn">
+                <input type="button" value="회원가입" class="return" onclick="location.href='join.html'">
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*메인 배너*/
+.main_banner {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.hamburger_whole_menu {
+    margin-top: 200px;
+}
+
+/*메인*/
+main {
+    width: 100%;
+    min-height: 100%;
+    padding: 100px 0;
+    margin: -100px auto;
+    box-sizing: border-box;
+}
+
+main nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media all and (min-width: 1024px) {
+    main {
+        width: 80%;
+    }
+
+    main nav {
+        width: 100%;
+    }
+
+    .main_banners {
+        width: 100%;
+    }
+}

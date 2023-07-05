@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/*메인 배너*/
+.main_banner {
+    width: 100%;
+    margin-top: 100px;
+}
+
+/*메인*/
+main {
+    width: 80%;
+    /*min-height: 100%;*/
+    /*padding-top: 100px; !*상하 100px은 헤더, 푸터 높이*!*/
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/*신간 안내*/
+.message_bible ul {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 100%;
+}
+
+.message_bible ul li {
+    float: left;
+    width: 49%;
+    font-size: 0.7rem;
+}
+
+.message_bible ul img {
+    width: 90%;
+}
+
+.message_bible ul h4 {
+    border-bottom: 3px solid black;
+    font-size: 0.8rem;
+}
+
+.book_brief_information {
+    line-height: 2;
+}
+
+.message_bible ul:hover h4 {
+    font-size: 0.9rem;
+    transition: all 1s;
+}
+
+.book_brief_information:hover {
+    /*font-size: 0.8rem;*/
+    /*transition: all 1s;*/
+}
+
+.introduce_book {
+    display: none;
+}
+
+@media all and (min-width: 768px) {
+    .introduce_book {
+        margin-top: 15px;
+        display: block;
+    }
+
+    .message_bible ul li {
+        font-size: 0.9rem;
+    }
+
+    .message_bible ul h4 {
+        font-size: 1rem;
+    }
+
+    .message_bible ul:hover h4 {
+        font-size: 1.1rem;
+    }
+
+    .book_brief_information:hover {
+        /*font-size: 0.9rem;*/
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .main_banners {
+        width: 80%;
+    }
+
+    .message_bible ul {
+        width: 49.7%;
+        display: inline-block;
+        /*min-height: 450px;*/
+    }
+}

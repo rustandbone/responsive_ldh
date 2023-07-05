@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body {
+    font-size: 0.8em;
+    /*background: url("alfons-morales-YLSwjSy7stw-unsplash.jpg") no-repeat center fixed rgba(255, 255, 255, 0.1);*/
+    background: url("../image/alfons-morales-YLSwjSy7stw-unsplash(1920 1080).png") no-repeat center fixed rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    width: 100%;
+}
+
+.whole {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px 70px 50px 70px;
+    position: absolute;
+    left: 48%;
+    top: 20%;
+    margin-left: -250px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /*height: 550px;*/
+}
+
+#subject {
+    padding-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.subject {
+    padding-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+.login_input {
+    width: 100%;
+    margin: 10px 0;
+    height: 30px;
+    background: transparent;
+    border-color: transparent transparent #666 transparent;
+}
+
+#pwd{
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #f4d00b !important;
+    border: 1px gray solid;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 30px;
+    /*border-color: #666!important;*/
+}
+
+.return {
+    cursor: pointer;
+}
+
+.return {
+    height: 30px;
+}
+
+#button {
+    padding-top: 30px;
+    text-align: center;
+}
+
+input::-webkit-input-placeholder {
+    color: #000;
+}

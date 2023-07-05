@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.hamburger_whole_menu {
+    margin-top: 200px;
+}
+
+/*메인*/
+main {
+    padding-top: 100px;
+    padding-bottom: 133px;
+    box-sizing: border-box;
+}
+
+/*신간 안내*/
+.inquiry {
+    margin: 0 auto;
+    font-size: 0.6rem;
+}
+
+.inquiry table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inquiry tr{
+    border: 1px silver solid;
+}
+
+#book, #name, #email {
+    width: 90%;
+    padding: 5px 0;
+    font-size: inherit;
+    margin: 30px auto;
+    text-indent: 10px;
+}
+
+#book {
+    margin-bottom: 10px;
+}
+
+.inquiry td {
+    text-align: center;
+}
+
+.submit {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: antiquewhite;
+    /*border: none;*/
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.input-file-button {
+    display: inline-block;
+    padding: 7px 12px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    font-size: 12px;
+    border: 2px solid black;
+    margin: 5px 0 10px 70%;
+    word-break: keep-all;
+}
+
+textarea {
+    margin-top: 20px;
+    width: 90%;
+    resize: none;
+}
+
+.thank {
+    font-weight: normal;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+@media all and (min-width: 768px) {
+    .inquiry {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    #book, #name, #email {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .inquiry {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .input-file-button {
+        margin-left: 80%;
+    }
+}

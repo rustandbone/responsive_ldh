@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+body {
+    font-size: 0.8em;
+    /*background: url("alfons-morales-YLSwjSy7stw-unsplash.jpg") no-repeat center fixed rgba(255, 255, 255, 0.1);*/
+    background: url("../image/alfons-morales-YLSwjSy7stw-unsplash(1920 1080).png") no-repeat center fixed rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    width: 100%;
+}
+
+.whole {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px 70px 40px 70px;
+    position: absolute;
+    left: 48%;
+    top: 5%;
+    margin-left: -250px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+        font-size: 0.9rem;
+}
+
+#subject {
+    padding-bottom: 40px;
+}
+
+.subject {
+    padding-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#form_join p {
+    margin-bottom: 10px;
+
+}
+
+#form_join input {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    background: transparent;
+    border-color: transparent transparent #666 transparent;
+}
+
+.btn {
+    border-color: #666!important;
+}
+
+span {
+    position: relative;
+    top: 5px;
+}
+
+#birth {
+    display: block;
+    margin-top: 10px;
+}
+
+select {
+    position: relative;
+    top: -15px;
+    /*bottom: -50px;*/
+    background: transparent;
+    /*margin-top: 10px;*/
+    /*margin-bottom: 10px;*/
+}
+
+#select_host {
+    position: relative;
+    top: 4px;
+}
+
+.check {
+    position: relative;
+    top: -5px;
+}
+
+.btn {
+    background: #f4d00b !important;
+    border: 1px gray solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit_form {
+    height: 30px;
+}
+
+.return {
+    cursor: pointer;
+    height: 30px;
+}
+
+.comment {
+    padding-top: -2px;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+}
+
+#host_email {
+    width: 100px;
+}
+
+#button {
+    padding-top: 20px;
+    text-align: center;
+}
+
+input::-webkit-input-placeholder {
+    color: #000;
+}

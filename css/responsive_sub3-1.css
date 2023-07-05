@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+.hamburger_whole_menu {
+    margin-top: 200px;
+}
+
+/*메인*/
+main {
+    min-height: 100%;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+}
+
+/*자주 묻는 질문*/
+.inquiry {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bible_image {
+    width: 50%;
+    max-width: 200px;
+}
+
+.guide {
+    margin-top: 40px;
+    line-height: 2;
+}
+
+.contact:hover {
+    text-decoration: underline;
+}
+
+/*4-1 복 있는 사람 소개*/
+.introduction ul li {
+    width: 100%;
+}
+
+.house_bookshelf {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.word {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 10px;
+    line-height: 2;
+    border: 3mm ridge rgba(254, 226, 62, .6);
+}
+
+.introduction_word {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    text-indent: 10px;
+    word-break: keep-all;
+}
+
+.emphasis {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/*공지 사항*/
+.notice_table th {
+    border-bottom: 3px solid black;
+    padding: 20px 0;
+    white-space: nowrap;
+}
+
+.notice_table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.notice_table td {
+    border-bottom: 1px solid black;
+
+    font-size: 0.6rem;
+
+}
+
+.number {
+    text-align: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.notice_table .date {
+    text-align: right;
+    padding-right: 5px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.subject {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+     padding: 20px 0;
+}
+
+.subject a:hover {
+    text-decoration: underline;
+}
+
+@media all and (min-width: 768px) {
+    .word, .introduction_word {
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .introduction ul {
+        display: table;
+        table-layout: fixed;
+    }
+
+    .introduction ul li {
+        display: table-cell;
+        width: 50%;
+    }
+
+    .introduction_word {
+        font-size: 1rem;
+        padding-left: 25px;
+        box-sizing: border-box;
+        vertical-align: middle;
+    }
+
+    .word {
+        font-size: 1.1rem;
+        padding: 30px 0;
+        border: 4mm ridge rgba(254, 226, 62, .6);
+    }
+
+    .emphasis {
+        font-size: 1.3rem;
+    }
+
+    /*공지 사항*/
+    .notice_table th,
+    .notice_table td {
+        font-size: 1rem;
+    }
+
+    .notice_table thead .date {
+        padding-right: 30px;
+    }
+}

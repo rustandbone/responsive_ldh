@@ -1,0 +1,601 @@
+@charset "UTF-8";
+
+/*메인 배너*/
+
+.main_banner {
+    width: 100%;
+    margin-top: 100px;
+}
+
+/*버튼*/
+.button_all {
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: gray;
+    text-decoration: none;
+    float: right;
+}
+
+.button_all:hover {
+    text-decoration: underline;
+}
+
+.plus_button, .plus_button2, .plus_button3 {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    color: gray;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+}
+
+.minus_button, .minus_button2, .minus_button3 {
+    display: none;
+    margin: 20px auto 0;
+    background: transparent;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.minus_button1_link, .minus_button2_link, .minus_button3_link {
+    display: block;
+    float: right;
+}
+
+/*메인*/
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*영상*/
+.video {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+}
+
+/*자주 묻는 질문, SNS*/
+.questions, .sns {
+    display: table;
+    border: 1px gray solid;
+    box-sizing: border-box;
+}
+
+.questions ul, .sns ul {
+    display: table-cell;
+    table-layout: fixed;
+    text-align: center;
+}
+
+section.inquiry {
+    margin-top: 0;
+}
+
+.inquiry a {
+    text-decoration: none;
+    color: black;
+}
+
+.sns a:hover {
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+.sns a:hover .icon {
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+}
+
+.questions {
+    width: 43%;
+    border-radius: 20px;
+    line-height: 2;
+    margin-right: 1%;
+}
+
+.questions a:hover {
+    font-weight: bold;
+}
+
+.sns {
+    width: 56%;
+    border-radius: 20px;
+    line-height: 2.5;
+    white-space: nowrap;
+}
+
+.sns img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.inquiry section:nth-child(2),
+.inquiry section:nth-child(3) {
+    float: left;
+}
+
+/*메인 타이틀*/
+.main_section {
+    margin: 30px 0;
+}
+
+.main_section_title {
+    margin: 15px;
+}
+
+/*신간 안내*/
+.new_books ul {
+    float: left;
+    width: 49.5%;
+    margin-right: 1%;
+    display: none;
+    cursor: pointer;
+}
+
+.new_books ul img {
+    width: 100%;
+    height: 100%;
+}
+
+.new_books ul:nth-child(odd) {
+    margin-right: 0;
+}
+
+/*메시지 성경*/
+.message_bible ul {
+    float: left;
+    width: 49.5%;
+    margin-right: 1%;
+    display: none;
+    cursor: pointer;
+}
+
+.message_bible ul:nth-child(odd) {
+    margin-right: 0;
+}
+
+.special_set {
+    width: 49.5% !important;
+}
+
+.message_bible ul img {
+    width: 100%;
+    height: 100%;
+}
+
+/*카드 뉴스*/
+.card_news ul {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+    display: none;
+}
+
+.card_news ul img {
+    width: 100%;
+}
+
+.card_news ul li:nth-child(2) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+
+.card_news ul li:last-child {
+    height: 45px;
+}
+
+.card_news li {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.card_news ul:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*오버레이*/
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.8s ease;
+}
+
+.container:hover .overlay {
+    background: rgba(0, 0, 0, .5);
+}
+
+.overlay_title {
+    position: absolute;
+    width: 90%;
+    left: 0;
+    top: 0;
+    padding-left: 15px;
+    font-size: 0.8rem;
+    text-align: left;
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: top .5s ease;
+    line-height: 2;
+}
+
+.container:hover .overlay_title {
+    opacity: 1;
+    top: 20%;
+}
+
+.swiper2 img {
+    width: 100%;
+}
+
+/*팝업*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.popup_layer {
+    position: relative;
+    width: 300px;
+    min-height: 370px;
+    border: 4mm ridge rgba(222, 222, 222, .6);
+    padding-bottom: 50px;
+    background: #fff;
+    z-index: 10;
+}
+
+.text_area {
+    padding: 50px 30px 30px;
+    text-align: center
+}
+
+.popup_btn_area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.popup_btn {
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.popup_dimmed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.2;
+}
+
+.popup_title {
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.popup_sub_title {
+    padding-bottom: 40px;
+    font-size: 1.2rem;
+}
+
+.popup_inner_text {
+    word-break: keep-all;
+    line-height: 1.5;
+}
+
+.check_popup {
+    display: inline-block;
+    text-indent: 10px;
+    padding-top: 17px;
+}
+
+/* IE7 이상 대응 */
+.popup_layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    padding-bottom: 50px;
+    margin: -100px 0 0 -150px;
+    background: #fff;
+    z-index: 10;
+}
+
+/* IE8 이상 대응 */
+.popup_layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 150px;
+    padding-bottom: 50px;
+    margin: auto;
+    background: #fff;
+    z-index: 10;
+}
+
+/*태블릿용 스타일*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    /*신간 안내*/
+    .new_books ul {
+        width: 32.666%;
+    }
+
+    .new_books ul:nth-child(odd) {
+        margin-right: 1%;
+    }
+
+    .new_books ul:nth-child(3n+1) {
+        margin-right: 0;
+    }
+
+    /*메시지 성경*/
+    .message_bible ul {
+        width: 32.666%;
+    }
+
+    .message_bible ul:nth-child(odd) {
+        margin-right: 1%;
+    }
+
+    .message_bible ul:nth-child(3n+1) {
+        margin-right: 0;
+    }
+
+    .special_set {
+        width: 32.666% !important;
+    }
+
+    /*카드 뉴스*/
+    .card_news ul {
+        width: 32.666%;
+    }
+
+    .card_news ul:nth-child(3n+1) {
+        margin-right: 0;
+    }
+
+    .video {
+        max-width: 818px;
+        height: 450px;
+    }
+
+    .inquiry section {
+        float: left;
+    }
+
+    .Youtube {
+        width: 100%;
+    }
+
+    .overlay_title {
+        font-size: 1.2rem;
+    }
+
+    .questions, .sns {
+        width: 49.5%;
+        border: 3px double gray;
+    }
+}
+
+/*PC용 스타일 : 769px ~ 960px */
+@media all and (min-width: 1024px) {
+    .main_banners {
+        width: 80%;
+    }
+
+    /*신간 안내*/
+    .new_books ul {
+        width: 19.2%;
+    }
+
+    .new_books ul:nth-child(odd) {
+        margin-right: 1%;
+    }
+
+    .new_books ul:nth-child(5n+1) {
+        margin-right: 0;
+    }
+
+    /*메시지 성경*/
+    .message_bible ul {
+        width: 19.2%;
+    }
+
+    .message_bible ul:nth-child(odd) {
+        margin-right: 1%;
+    }
+
+    .message_bible ul:nth-child(5n+1) {
+        margin-right: 0;
+    }
+
+    .special_set {
+        width: 19.2% !important;
+    }
+
+    /*카드 뉴스*/
+    .card_news ul {
+        width: 19.2%;
+    }
+
+    .card_news ul:nth-child(5n+1) {
+        margin-right: 0;
+    }
+
+    .overlay_title {
+        font-size: 1rem;
+    }
+
+    .inquiry section {
+        float: left;
+    }
+
+    .inquiry section:nth-child(2), .inquiry section:nth-child(3) {
+        float: right;
+    }
+
+    .Youtube {
+        width: 70%;
+    }
+
+    .video {
+        margin-left: 0;
+        width: 100%;
+        max-width: 1120px;
+        min-height: 550px;
+    }
+
+    .questions, .sns {
+        border: 5px double gray;
+    }
+
+    .questions {
+        width: 29%;
+        max-width: 350px;
+        margin: 50px 0;
+        line-height: 3;
+    }
+
+    .sns {
+        width: 29%;
+        max-width: 350px;
+        line-height: 3.75;
+    }
+}
+
+/*인터뷰*/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the image by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail image */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 10px 16px;
+    color: white;
+    font-size: 0.8rem;
+    word-break: keep-all;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 12.5%;
+}
+
+/* Add a transparency effect for thumnbail image */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+@media all and (min-width: 768px) {
+    .caption-container {
+        font-size: 1rem;
+    }
+}
